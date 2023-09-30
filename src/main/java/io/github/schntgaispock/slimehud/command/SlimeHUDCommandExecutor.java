@@ -35,15 +35,15 @@ public class SlimeHUDCommandExecutor implements CommandExecutor {
             switch (args[0]) {
                 case "toggle":
                     if (!player.hasPermission("slimehud.togglewaila")) {
-                        player.sendMessage("§a§lSlimeHUD§7> §cYou don't have permission to toggle your WAILA HUD!");
+                        player.sendMessage("§a§lSlimeHUD§7> §c你没有权限切换 WAILA HUD！");
                         return true;
                     }
                     if (SlimeHUD.getInstance().getConfig().getBoolean("waila.disabled", false)) {
-                        player.sendMessage("§a§lSlimeHUD§7> §cThe WAILA HUD is disabled!");
+                        player.sendMessage("§a§lSlimeHUD§7> §cWAILA HUD 被禁用了！");
                         return true;
                     }
                     if (SlimeHUD.getInstance().getConfig().getList("waila.disabled-in", Collections.EMPTY_LIST).contains(player.getWorld().getName())) {
-                        player.sendMessage("§a§lSlimeHUD§7> §cThe WAILA HUD is disabled in this world!");
+                        player.sendMessage("§a§lSlimeHUD§7> §cWAILA HUD 在当前世界被禁用了！");
                         return true;
                     }
                     boolean wailaOn = SlimeHUD.getInstance().getPlayerData().getBoolean(uuid + ".waila", true);
@@ -53,7 +53,7 @@ public class SlimeHUDCommandExecutor implements CommandExecutor {
                     wailas.get(uuid).setPaused(wailaOn);
 
                     SlimeHUD.getInstance().getPlayerData().save();
-                    player.sendMessage("§a§lSlimeHUD§7> HUD toggled " + (wailaOn ? "§coff" : "§aon"));
+                    player.sendMessage("§a§lSlimeHUD§7> HUD 已切换为 " + (wailaOn ? "§c关闭" : "§a开启"));
                     return true;
             
                 default:
