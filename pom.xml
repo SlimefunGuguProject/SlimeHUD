@@ -95,9 +95,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.Slimefun</groupId>
+            <groupId>com.github.SlimefunGuguProject</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>RC-36</version>
+            <version>2024.3</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
