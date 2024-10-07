@@ -97,7 +97,7 @@
         <dependency>
             <groupId>com.github.Slimefun</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>RC-36</version>
+            <version>RC-37</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -124,7 +124,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.26</version>
+            <version>1.18.34</version>
         </dependency>
 
         <dependency>
