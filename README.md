@@ -10,11 +10,7 @@
 
 ## 下载
 
-<p align="center">
-  <a href="https://builds.guizhanss.net/SlimefunGuguProject/SlimeHUD/master">
-    <img src="https://builds.guizhanss.net/f/SlimefunGuguProject/SlimeHUD/master/badge.svg" alt="Build status"/>
-  </a>
-</p>
+[下载 SlimeHUD](https://resources.guizhanss.com/plugin/SlimeHUD)
 
 ## 预览
 
